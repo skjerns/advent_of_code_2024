@@ -4,9 +4,15 @@ Created on Sun Dec  1 17:06:01 2024
 
 @author: Simon
 """
+import os
+from aoc import get_input
 import stimer
 
-with open(__file__.replace('day', 'input')[:-2]+'txt', 'r') as f:
+
+day = os.path.basename(__file__)[-5:-3]
+c = get_input(day)
+
+with open() as f:
     c = f.read().strip()
     f.seek(0)
     lines = [l.strip() for l in f.readlines()]
