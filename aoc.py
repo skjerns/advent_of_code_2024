@@ -1,5 +1,6 @@
 import requests
 import joblib
+import numpy as np
 
 mem = joblib.Memory('.')
 
@@ -11,6 +12,11 @@ with open('session', 'r') as f:
 
 def get_lines(day, year=YEAR, session_cookie=SESSION_COOKIE):
     return get_input(day, year, session_cookie).split('\n')
+
+def get_matrix(day, year=YEAR, session_cookie=SESSION_COOKIE, dtype=None):
+    lines = get_lines(day, year, session_cookie)
+    arr = np.array([list(line) for line in lines], dtype=dtype)
+    return arr
 
 @mem.cache
 def get_input(day, year=YEAR, session_cookie=SESSION_COOKIE):
