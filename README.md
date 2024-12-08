@@ -13,4 +13,5 @@ I did not optimize my code for performance, but here are the numbers on a AMD Ry
 | 3   | [Mull It Over](https://adventofcode.com/2024/day/3)       | 6.5 ms  |
 | 4   | [Ceres Search](https://adventofcode.com/2024/day/4)       | 13 ms   |
 | 5   | [Print Queue](https://adventofcode.com/2024/day/5)        | 101 ms  |
-| 6   | [Guard Gallivant](https://adventofcode.com/2024/day/6)    | 4 min   |
+| 6   | [Guard Gallivant](https://adventofcode.com/2024/day/6)    | 115 s   |
+| 7   | [Bridge Repair](https://adventofcode.com/2024/day/7)      | 33 s    |
