@@ -16,3 +16,4 @@ I did not optimize my code for performance, but here are the numbers on a AMD Ry
 | 6   | [Guard Gallivant](https://adventofcode.com/2024/day/6)       | 115 s   |
 | 7   | [Bridge Repair](https://adventofcode.com/2024/day/7)         | 33 s    |
 | 8   | [Resonant Collinearity](https://adventofcode.com/2024/day/8) | 15 ms   |
+| 9   | [Disk Fragmenter](https://adventofcode.com/2024/day/9)       | 28 s    |

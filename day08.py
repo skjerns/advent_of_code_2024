@@ -96,6 +96,5 @@ with stimer:
                 anti2 = anti2 - diff
 
             pass
-        # asdf
-        # asd
+
     print(f'{len(antinodes)=}')
