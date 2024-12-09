@@ -53,3 +53,8 @@ def get_input(day, year=YEAR, session_cookie=SESSION_COOKIE):
         raise Exception(f"Puzzle for Day {day}, {year} is not available yet.")
     else:
         raise Exception(f"Failed to fetch puzzle input: {response.status_code} - {response.reason}")
+
+def print_matrix(matrix):
+    lines = '\n'.join([''.join(r) for r in matrix])
+    print(lines)
+    return
