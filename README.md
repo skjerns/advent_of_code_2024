@@ -6,8 +6,6 @@ thb this year I did not have time at all to run this properly, so please dear re
 
 I did not optimize my code for performance, but here are the numbers on a AMD Ryzen 7 PRO 6850U with 32 GB RAM. Runtimes exclude imports and reading from disk/network. I'll only resort to parallelization once the runtimes are above 5 minutes.
 
-
-
 | Day | Title                                                        | Runtime |
 | --- | ------------------------------------------------------------ | ------- |
 | 1   | [Historian Hysteria](https://adventofcode.com/2024/day/1)    | 9.5 ms  |
@@ -21,7 +19,6 @@ I did not optimize my code for performance, but here are the numbers on a AMD Ry
 | 9   | [Disk Fragmenter](https://adventofcode.com/2024/day/9)       | 28 s    |
 | 10  | [Hoof It](https://adventofcode.com/2024/day/10)              | 292 ms  |
 | 11  | [Plutonian Pebbles](https://adventofcode.com/2024/day/11)    | 550 ms  |
-
-
+| 12  | [Garden Groups](https://adventofcode.com/2024/day/12)        | 850 ms  |
 
 Note, puzzle input is different for participants and I've seen 50% increase in runtime for other puzzles input, so the runtimes are user-specific.
