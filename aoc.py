@@ -5,7 +5,7 @@ import numpy as np
 mem = joblib.Memory('.')
 #%% things that are often used
 
-directions = {'^': [-1, 0],
+step = {'^': [-1, 0],
                 '>': [0, 1],
                 'v': [1, 0],
                 '<': [0, -1],
@@ -18,6 +18,19 @@ dir2int =  {'^': 0,
             'v': 2,
             '<': 3}
 
+turn_clock = {'^': '>',
+         '>': 'v',
+         'v': '<',
+         '<': '^',
+         0: 1,
+         1: 2,
+         2: 3,
+         4: 0}
+
+turn_counter = {'^': '<',
+                 '>': '^',
+                 'v': '>',
+                 '<': 'v'}
 
 #%% Constants
 AOC_URL = "https://adventofcode.com"
