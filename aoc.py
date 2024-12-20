@@ -3,20 +3,40 @@ import joblib
 import numpy as np
 
 mem = joblib.Memory('.')
+#%% things that are often used
 
-# Constants
+directions = {'^': [-1, 0],
+                '>': [0, 1],
+                'v': [1, 0],
+                '<': [0, -1],
+                0: [-1, 0],
+                1: [0, 1],
+                2: [1, 0],
+                3: [0, -1]}
+dir2int =  {'^': 0,
+            '>': 1,
+            'v': 2,
+            '<': 3}
+
+
+#%% Constants
 AOC_URL = "https://adventofcode.com"
 YEAR = 2024  # Change this to the desired year
 with open('session', 'r') as f:
     SESSION_COOKIE = f.read().strip()  # Replace with your session cookie
 
+#%% functions
 def get_lines(day, year=YEAR, session_cookie=SESSION_COOKIE):
     return get_input(day, year, session_cookie).split('\n')
 
 def get_matrix(day, year=YEAR, session_cookie=SESSION_COOKIE, dtype=None):
     lines = get_lines(day, year, session_cookie)
-    arr = np.array([list(line) for line in lines], dtype=dtype)
-    return arr
+    return lines2matrix(lines)
+
+def lines2matrix(lines, dtype=None):
+    return np.array([list(line) for line in lines], dtype=dtype)
+
+
 
 @mem.cache
 def get_input(day, year=YEAR, session_cookie=SESSION_COOKIE):
